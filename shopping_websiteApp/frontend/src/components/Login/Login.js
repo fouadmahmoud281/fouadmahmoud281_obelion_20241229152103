@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { GoogleLogin } from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
+#import { GoogleLogin } from 'react-google-login';
+#import FacebookLogin from 'react-facebook-login';
 import axios from 'axios';
 import './Login.css';
 
@@ -9,19 +9,19 @@ const Login = () => {
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleGoogleLogin = async (response) => {
-    try {
-      const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/google', {
-        tokenId: response.tokenId
-      });
-      localStorage.setItem('token', res.data.token);
-      window.location.href = '/dashboard';
-    } catch (error) {
-      console.error('Google login failed', error.response.data.error);
-    }
-  };
+  #const handleGoogleLogin = async (response) => {
+    #try {
+     #const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/google', {
+    #tokenId: response.tokenId
+   #});
+      #localStorage.setItem('token', res.data.token);
+     #window.location.href = '/dashboard';
+    #} catch (error) {
+    #console.error('Google login failed', error.response.data.error);
+   #}
+  #};
 
-  const handleFacebookLogin = async (response) => {
+  #const handleFacebookLogin = async (response) => {
     try {
       const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/facebook', {
         accessToken: response.accessToken,

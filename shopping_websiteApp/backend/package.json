@@ -12,18 +12,21 @@
     "license": "ISC",
     "dependencies": {
         "sequelize": "latest",
+        "react": "latest",
         "express": "latest",
+        "jsonwebtoken": "8.5.1",
+        "crypto": "latest",
         "cors": "latest",
         "mysql": "latest",
         "mysql2": "latest",
-        "bcrypt": "5.0.1",
-        "jsonwebtoken": "8.5.1"
+        "bcrypt": "5.0.1"
     },
     "devDependencies": {
         "sequelize": "latest",
         "express": "4.17.1",
+        "jsonwebtoken": "8.5.1",
+        "crypto": "latest",
         "bcrypt": "5.0.1",
-        "jest": "27.2.4",
-        "jsonwebtoken": "8.5.1"
+        "jest": "27.2.4"
     }
 }

@@ -16,9 +16,10 @@
         "lodash": "latest"
     },
     "devDependencies": {
+        "axios": "0.21.1",
         "eslint": "latest",
-        "webpack": "latest",
-        "react": "latest"
+        "react": "latest",
+        "webpack": "latest"
     },
     "browserslist": {
         "production": [

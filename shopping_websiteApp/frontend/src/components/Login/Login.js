@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-#import { GoogleLogin } from 'react-google-login';
-#import FacebookLogin from 'react-facebook-login';
+//import { GoogleLogin } from 'react-google-login';
+//import FacebookLogin from 'react-facebook-login';
 import axios from 'axios';
 import './Login.css';
 
@@ -50,14 +50,14 @@ const Login = () => {
   return (
     <div className="login-container">
       <h2>Login</h2>
-      /*<GoogleLogin
+      /* <GoogleLogin
         clientId="YOUR_GOOGLE_CLIENT_ID"
         buttonText="Login with Google"
         onSuccess={handleGoogleLogin}
         onFailure={handleGoogleLogin}
         cookiePolicy={'single_host_origin'}
         className="google-login-button"
-      />*/
+      /> */
       /*<FacebookLogin
         appId="YOUR_FACEBOOK_APP_ID"
         autoLoad={false}

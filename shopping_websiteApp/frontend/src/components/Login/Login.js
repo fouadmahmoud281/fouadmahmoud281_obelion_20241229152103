@@ -9,19 +9,19 @@ const Login = () => {
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
 
-  #const handleGoogleLogin = async (response) => {
-    #try {
-     #const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/google', {
-    #tokenId: response.tokenId
-   #});
-      #localStorage.setItem('token', res.data.token);
-     #window.location.href = '/dashboard';
-    #} catch (error) {
-    #console.error('Google login failed', error.response.data.error);
-   #}
-  #};
+  //const handleGoogleLogin = async (response) => {
+    //try {
+     //const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/google', {
+    //tokenId: response.tokenId
+   //});
+      //localStorage.setItem('token', res.data.token);
+     //window.location.href = '/dashboard';
+    //} catch (error) {
+    //console.error('Google login failed', error.response.data.error);
+   //}
+  //};
 
-  #const handleFacebookLogin = async (response) => {
+  /*const handleFacebookLogin = async (response) => {
     try {
       const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/facebook', {
         accessToken: response.accessToken,
@@ -33,7 +33,7 @@ const Login = () => {
       console.error('Facebook login failed', error.response.data.error);
     }
   };
-
+*/
   const handleEmailLogin = async () => {
     try {
       const res = await axios.post('https://shopping-websiteapp-backend.cloud-stacks.com/api/login/email', {
@@ -50,22 +50,22 @@ const Login = () => {
   return (
     <div className="login-container">
       <h2>Login</h2>
-      <GoogleLogin
+      /*<GoogleLogin
         clientId="YOUR_GOOGLE_CLIENT_ID"
         buttonText="Login with Google"
         onSuccess={handleGoogleLogin}
         onFailure={handleGoogleLogin}
         cookiePolicy={'single_host_origin'}
         className="google-login-button"
-      />
-      <FacebookLogin
+      />*/
+      /*<FacebookLogin
         appId="YOUR_FACEBOOK_APP_ID"
         autoLoad={false}
         fields="name,email,picture"
         callback={handleFacebookLogin}
         cssClass="facebook-login-button"
         textButton="Login with Facebook"
-      />
+      />*/
       <div className="email-login">
         <input
           type="email"
